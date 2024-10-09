@@ -9,3 +9,7 @@ RENAME COLUMN last_name TO time_in_path;
 --now i want to add more columns of data 
 ALTER TABLE employee_progress 
 ADD COLUMN total_units_picked INT;
+-- changing rate data type to DECIMAL(4,2)
+ALTER TABLE employee_progress
+MODIFY rate DECIMAL;
+
